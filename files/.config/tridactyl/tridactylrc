@@ -1,0 +1,69 @@
+" theme
+colors base16-grayscale-dark
+
+" bookmarks
+bind b bmark
+bind B fillcmdline bmarks
+
+" move on completion
+bind --mode=ex <C-j> ex.next_completion
+bind --mode=ex <C-k> ex.prev_completion
+
+" Sane hinting mode
+set hintfiltermode vimperator-reflow
+set hintnames uniform
+
+" Allow Ctrl-a to select all in the commandline
+unbind --mode=ex <C-a>
+
+" Allow Ctrl-c to copy in the commandline
+unbind --mode=ex <C-c>
+
+" Close
+unbind d
+bind q tabclose
+
+" scroll
+set smoothscroll false 
+bind j scrollline 3
+bind k scrollline -3
+
+" editor
+set editorcmd st -c tridactyl_editor -e nvim
+
+" search
+unbind <C-f>
+
+bind / fillcmdline find
+bind n findnext 1
+bind N findnext -1
+bind ;n nohlsearch
+
+" tab nav
+bind J tabnext
+bind K tabprev
+
+" tab nav
+bind t fillcmdline tab
+bind T fillcmdline taball
+
+" open
+bind o fillcmdline open
+bind O fillcmdline tabopen
+
+" home tab
+set newtab about:blank
+
+" gui
+guiset_quiet statuspanel none 
+
+" attach detach
+bind A fillcmdline tabpush
+bind a tabdetach
+bind <C-A> fillcmdline winmerge
+
+" no indicator
+set modeindicator false
+
+"
+set storageloc local
