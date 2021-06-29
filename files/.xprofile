@@ -31,8 +31,9 @@ picom --experimental-backends &
 nm-applet &
 
 # Audio
-pipewire-pulse &
+# pipewire-pulse &
 # start-pulseaudio-x11 &
+pulseaudio &
 
 # Disk Automount
 udiskie --tray &
@@ -53,6 +54,7 @@ redshift-gtk -t 6500:5000 &
 unclutter &
 
 # kdeconnect
+export $(dbus-launch)
 kdeconnect-indicator &
 
 # calcurse notifications

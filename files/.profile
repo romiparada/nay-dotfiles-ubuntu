@@ -31,6 +31,7 @@ export BASH_LIB_BIN=$MY_BIN/lib
 
 ## XDG
 export XDG_CONFIG_DIR="$HOME/.config"
+export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 ## Misc Configrations

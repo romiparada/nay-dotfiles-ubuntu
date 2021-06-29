@@ -1,7 +1,7 @@
 ###########
 # Plugins #
 ###########
-source /usr/share/zsh/share/antigen.zsh
+source /usr/share/zsh-antigen/antigen.zsh
 
 antigen bundle "unixorn/autoupdate-antigen.zshplugin"
 
@@ -112,7 +112,7 @@ function cwd() {
 # fzf #
 #######
 # enable fzf completion with **
-source /usr/share/fzf/completion.zsh
+# source /usr/share/fzf/completion.zsh
 
 #  Opts
 FZF_DEFAULT_OPTS='--bind=ctrl-d:preview-down,ctrl-u:preview-up'
@@ -282,5 +282,5 @@ function preexec(){
 # print -Pn "\e]0;`pwd`\a" 
 # echo  -ne "\033k`pwd`\033\\"
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
