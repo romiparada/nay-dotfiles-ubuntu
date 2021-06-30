@@ -20,9 +20,9 @@ unalternates *
 unset signature
 
 set query_command = "mail-query '%s' /home/fede/.local/share/mail/federico.ciuffardi@outlook.com"
-macro index S "<shell-escape>mailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
-macro index \Cr "<shell-escape>mailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
-macro index <F5> "<shell-escape>mailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
+macro index S "<shell-escape>mymailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
+macro index \Cr "<shell-escape>mymailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
+macro index <F5> "<shell-escape>mymailsync federico.ciuffardi@outlook.com<enter>" "run mbsync to sync federico.ciuffardi@outlook.com"
 
 mailboxes "=Archive" "=Archives/2020" "=Deleted" "=Drafts" "=Inbox" "=Junk" "=Notes" "=Outbox" "=Queue" "=Sent" "=Trash"
 macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
