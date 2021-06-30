@@ -6,7 +6,6 @@ appearance.headerline=yes
 appearance.eventseparator=yes
 appearance.dayseparator=yes
 appearance.emptyline=yes
-appearance.emptyday=--
 appearance.notifybar=yes
 appearance.sidebarwidth=3
 appearance.theme=red on default
